@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaInventarios.UI", "SistemaInventarios.UI\SistemaInventarios.UI.csproj", "{6B449EEA-7474-4330-A4CA-2CB1E415EF3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaInventarios.Model", "SistemaInventarios.Model\SistemaInventarios.Model.csproj", "{35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaInventarios.ApplicationServices", "SistemaInventarios.ApplicationServices\SistemaInventarios.ApplicationServices.csproj", "{142BCC19-C354-4CAC-81B1-204FAAEFC222}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaInventarios.ApplicationSettings", "SistemaInventarios.ApplicationSettings\SistemaInventarios.ApplicationSettings.csproj", "{21F95650-5F92-4A9E-B716-876021EA1DB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaInventarios.Data", "SistemaInventarios.Data\SistemaInventarios.Data.csproj", "{05D4CEED-E45D-44EB-81F0-F1512F150A6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaInventarios.Tests", "SistemaInventarios.Tests\SistemaInventarios.Tests.csproj", "{9A5E709A-1453-4544-AE35-6B6A3C2CA47F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B449EEA-7474-4330-A4CA-2CB1E415EF3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B449EEA-7474-4330-A4CA-2CB1E415EF3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B449EEA-7474-4330-A4CA-2CB1E415EF3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B449EEA-7474-4330-A4CA-2CB1E415EF3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{142BCC19-C354-4CAC-81B1-204FAAEFC222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{142BCC19-C354-4CAC-81B1-204FAAEFC222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{142BCC19-C354-4CAC-81B1-204FAAEFC222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{142BCC19-C354-4CAC-81B1-204FAAEFC222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F95650-5F92-4A9E-B716-876021EA1DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F95650-5F92-4A9E-B716-876021EA1DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F95650-5F92-4A9E-B716-876021EA1DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F95650-5F92-4A9E-B716-876021EA1DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05D4CEED-E45D-44EB-81F0-F1512F150A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D4CEED-E45D-44EB-81F0-F1512F150A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D4CEED-E45D-44EB-81F0-F1512F150A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D4CEED-E45D-44EB-81F0-F1512F150A6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A5E709A-1453-4544-AE35-6B6A3C2CA47F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A5E709A-1453-4544-AE35-6B6A3C2CA47F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A5E709A-1453-4544-AE35-6B6A3C2CA47F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A5E709A-1453-4544-AE35-6B6A3C2CA47F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
