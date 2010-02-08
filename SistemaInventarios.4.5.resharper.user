@@ -3,6 +3,7 @@
     <string />
     <integer />
     <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
       <setting name="SolutionAnalysisEnabled">False</setting>
     </boolean>
   </SettingsComponent>
@@ -16,52 +17,61 @@
       <File id="05D4CEED-E45D-44EB-81F0-F1512F150A6B/d:NHibernateMaps/d:Conventions/f:HasManyToManyConvention.cs" caret="519" fromTop="1" />
       <File id="05D4CEED-E45D-44EB-81F0-F1512F150A6B/d:NHibernateMaps/d:Conventions/f:PrimaryKeyConvention.cs" caret="109" fromTop="3" />
       <File id="05D4CEED-E45D-44EB-81F0-F1512F150A6B/d:NHibernateMaps/d:Conventions/f:ReferenceConvention.cs" caret="119" fromTop="3" />
-      <File id="142BCC19-C354-4CAC-81B1-204FAAEFC222/d:Impl/f:ClienteService.cs" caret="0" fromTop="0" />
       <File id="9A5E709A-1453-4544-AE35-6B6A3C2CA47F/f:App.config" caret="0" fromTop="0" />
       <File id="21F95650-5F92-4A9E-B716-876021EA1DB7/d:WindsorSettings/f:WindsorSetup.cs" caret="0" fromTop="0" />
-      <File id="21F95650-5F92-4A9E-B716-876021EA1DB7/d:WindsorSettings/f:ComponentRegistrar.cs" caret="0" fromTop="0" />
-      <File id="d:&amp;/f:App.config/l:C!?Net?Projects?SistemaInventarios?SistemaInventarios.UI?App.config" caret="423" fromTop="9" />
-      <File id="d:&amp;/f:App.config/l:C!?Net?Projects?SistemaInventarios?SistemaInventarios.ApplicationSettings?App.config" caret="423" fromTop="9" />
       <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:ValidationHelper/f:ModelStateValidation.cs" caret="0" fromTop="0" />
-      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="0" fromTop="0" />
       <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:NHibernate.config" caret="0" fromTop="0" />
       <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:NHvalidator.config" caret="0" fromTop="0" />
-      <File id="35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81/d:DataInterfaces/f:ReflectionHelper.cs" caret="127" fromTop="5" />
       <File id="35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81/d:NHibernateValidator/f:SpanishMessageInterpolator.cs" caret="24" fromTop="0" />
-      <File id="35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81/d:NHibernateValidator/f:BaseValidatorAttribute.cs" caret="0" fromTop="0" />
-      <File id="21F95650-5F92-4A9E-B716-876021EA1DB7/d:NHibernateSettings/f:NHibernateConfigSetup.cs" caret="0" fromTop="0" />
+      <File id="35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81/d:NHibernateValidator/f:BaseValidatorAttribute.cs" caret="1165" fromTop="8" />
+      <File id="35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81/d:DataInterfaces/f:ReflectionHelper.cs" caret="784" fromTop="13" />
+      <File id="142BCC19-C354-4CAC-81B1-204FAAEFC222/f:IClienteService.cs" caret="333" fromTop="10" />
+      <File id="35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81/f:Cliente.cs" caret="292" fromTop="11" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:Mappers/f:AutoFormMapper.cs" caret="493" fromTop="13" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:Mappers/d:Impl/f:Mapper.cs" caret="1770" fromTop="24" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:Mappers/f:IClienteMapper.cs" caret="182" fromTop="5" />
+      <File id="21F95650-5F92-4A9E-B716-876021EA1DB7/d:NHibernateSettings/f:NHibernateConfigSetup.cs" caret="1104" fromTop="19" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:InventariosProfile.cs" caret="742" fromTop="31" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:AutoMapperConfiguration.cs" caret="52" fromTop="2" />
+      <File id="21F95650-5F92-4A9E-B716-876021EA1DB7/d:WindsorSettings/f:ComponentRegistrar.cs" caret="1884" fromTop="12" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:Mappers/f:IMapper.cs" caret="176" fromTop="6" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:StaticModelFields/f:ClienteForm.cs" caret="112" fromTop="6" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:Mappers/d:Impl/f:ClienteMapper.cs" caret="837" fromTop="18" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmMainForm.cs" caret="3019" fromTop="21" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="2218" fromTop="31" />
+      <File id="142BCC19-C354-4CAC-81B1-204FAAEFC222/d:Impl/f:ClienteService.cs" caret="0" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
-      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="3609" fromTop="11" />
-      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="1763" fromTop="16" />
-      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:ValidationHelper/f:ModelStateValidation.cs" caret="813" fromTop="24" />
-      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:ValidationHelper/f:ModelStateValidation.cs" caret="612" fromTop="16" />
-      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:ValidationHelper/f:ModelStateValidation.cs" caret="508" fromTop="8" />
-      <File id="21F95650-5F92-4A9E-B716-876021EA1DB7/d:WindsorSettings/f:ComponentRegistrar.cs" caret="1519" fromTop="14" />
-      <File id="21F95650-5F92-4A9E-B716-876021EA1DB7/d:WindsorSettings/f:ComponentRegistrar.cs" caret="2328" fromTop="14" />
-      <File id="21F95650-5F92-4A9E-B716-876021EA1DB7/d:WindsorSettings/f:ComponentRegistrar.cs" caret="1534" fromTop="9" />
-      <File id="21F95650-5F92-4A9E-B716-876021EA1DB7/d:WindsorSettings/f:ComponentRegistrar.cs" caret="1863" fromTop="16" />
-      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:ValidationHelper/f:ModelStateValidation.cs" caret="281" fromTop="8" />
-      <File id="21F95650-5F92-4A9E-B716-876021EA1DB7/d:WindsorSettings/f:ComponentRegistrar.cs" caret="1194" fromTop="11" />
-      <File id="d:&amp;/f:App.config/l:C!?Net?Projects?SistemaInventarios?SistemaInventarios.ApplicationSettings?App.config" caret="60" fromTop="2" />
-      <File id="d:&amp;/f:App.config/l:C!?Net?Projects?SistemaInventarios?SistemaInventarios.ApplicationSettings?App.config" caret="423" fromTop="9" />
-      <File id="d:&amp;/f:App.config/l:C!?Net?Projects?SistemaInventarios?SistemaInventarios.UI?App.config" caret="60" fromTop="2" />
-      <File id="d:&amp;/f:App.config/l:C!?Net?Projects?SistemaInventarios?SistemaInventarios.UI?App.config" caret="423" fromTop="9" />
-      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="1935" fromTop="21" />
-      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="1711" fromTop="15" />
-      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="1508" fromTop="7" />
-      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:ValidationHelper/f:ModelStateValidation.cs" caret="508" fromTop="4" />
-      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:ValidationHelper/f:ModelStateValidation.cs" caret="660" fromTop="10" />
-      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:NHvalidator.config" caret="254" fromTop="3" />
-      <File id="21F95650-5F92-4A9E-B716-876021EA1DB7/d:NHibernateSettings/f:NHibernateConfigSetup.cs" caret="1590" fromTop="16" />
-      <File id="21F95650-5F92-4A9E-B716-876021EA1DB7/d:NHibernateSettings/f:NHibernateConfigSetup.cs" caret="837" fromTop="5" />
-      <File id="35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81/d:NHibernateValidator/f:BaseValidatorAttribute.cs" caret="2870" fromTop="69" />
-      <File id="35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81/d:DataInterfaces/f:ReflectionHelper.cs" caret="3370" fromTop="85" />
-      <File id="35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81/d:DataInterfaces/f:ReflectionHelper.cs" caret="127" fromTop="5" />
-      <File id="35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81/d:NHibernateValidator/f:BaseValidatorAttribute.cs" caret="192" fromTop="0" />
-      <File id="21F95650-5F92-4A9E-B716-876021EA1DB7/d:NHibernateSettings/f:NHibernateConfigSetup.cs" caret="657" fromTop="3" />
-      <File id="35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81/d:NHibernateValidator/f:SpanishMessageInterpolator.cs" caret="1124" fromTop="23" />
-      <File id="35C4A595-EA5E-4B9D-AB89-FFDB5FD01A81/d:NHibernateValidator/f:SpanishMessageInterpolator.cs" caret="284" fromTop="8" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:Mappers/f:IClienteMapper.cs" caret="200" fromTop="5" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:Mappers/d:Impl/f:ClienteMapper.cs" caret="284" fromTop="8" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:Mappers/d:Impl/f:ClienteMapper.cs" caret="434" fromTop="13" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmMainForm.cs" caret="3166" fromTop="13" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:AutoMapperConfiguration.cs" caret="52" fromTop="3" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:InventariosProfile.cs" caret="765" fromTop="39" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:InventariosProfile.cs" caret="741" fromTop="17" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:InventariosProfile.cs" caret="742" fromTop="11" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmMainForm.cs" caret="3019" fromTop="15" />
+      <File id="21F95650-5F92-4A9E-B716-876021EA1DB7/d:WindsorSettings/f:ComponentRegistrar.cs" caret="1526" fromTop="12" />
+      <File id="21F95650-5F92-4A9E-B716-876021EA1DB7/d:WindsorSettings/f:ComponentRegistrar.cs" caret="760" fromTop="8" />
+      <File id="21F95650-5F92-4A9E-B716-876021EA1DB7/d:WindsorSettings/f:ComponentRegistrar.cs" caret="1872" fromTop="12" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="526" fromTop="8" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="798" fromTop="15" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:StaticModelFields/f:ClienteForm.cs" caret="416" fromTop="12" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="1737" fromTop="15" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:StaticModelFields/f:ClienteForm.cs" caret="119" fromTop="6" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:Mappers/d:Impl/f:ClienteMapper.cs" caret="484" fromTop="15" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="3549" fromTop="18" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="4285" fromTop="16" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="2190" fromTop="17" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="1960" fromTop="12" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="3525" fromTop="20" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="1064" fromTop="7" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="3536" fromTop="22" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:Mappers/d:Impl/f:ClienteMapper.cs" caret="799" fromTop="16" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/d:Mappers/d:Impl/f:ClienteMapper.cs" caret="640" fromTop="14" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="926" fromTop="17" />
+      <File id="6B449EEA-7474-4330-A4CA-2CB1E415EF3C/f:FrmClienteForm.cs" caret="5262" fromTop="17" />
+      <File id="142BCC19-C354-4CAC-81B1-204FAAEFC222/d:Impl/f:ClienteService.cs" caret="1116" fromTop="13" />
     </RecentEdits>
   </RecentFiles>
   <UnitTestRunner>
@@ -69,31 +79,31 @@
   </UnitTestRunner>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="prop" priority="6" />
-      <Item value="int" priority="0" />
-      <Item value="string" priority="7" />
+      <Item value="prop" priority="17" />
+      <Item value="int" priority="6" />
+      <Item value="string" priority="16" />
       <Item value="virtual" priority="1" />
       <Item value="interface" priority="0" />
       <Item value="IClienteService" priority="0" />
       <Item value="ctor" priority="0" />
-      <Item value="this" priority="0" />
-      <Item value="clienteRepository" priority="0" />
-      <Item value="public" priority="0" />
+      <Item value="this" priority="1" />
+      <Item value="clienteRepository" priority="3" />
+      <Item value="public" priority="1" />
       <Item value="FrmClienteForm" priority="3" />
-      <Item value="readonly" priority="0" />
-      <Item value="private" priority="4" />
+      <Item value="readonly" priority="1" />
+      <Item value="private" priority="6" />
       <Item value="Application" priority="1" />
       <Item value="frmClienteForm" priority="0" />
       <Item value="windsorSetup" priority="2" />
-      <Item value="new" priority="0" />
+      <Item value="new" priority="4" />
       <Item value="WindsorSetup" priority="0" />
-      <Item value="Rfc" priority="0" />
-      <Item value="ApellidoPaterno" priority="0" />
-      <Item value="ApellidoMaterno" priority="0" />
-      <Item value="cliente" priority="2" />
-      <Item value="txtNombre" priority="0" />
-      <Item value="static" priority="1" />
-      <Item value="var" priority="0" />
+      <Item value="Rfc" priority="1" />
+      <Item value="ApellidoPaterno" priority="1" />
+      <Item value="ApellidoMaterno" priority="1" />
+      <Item value="cliente" priority="17" />
+      <Item value="txtNombre" priority="1" />
+      <Item value="static" priority="5" />
+      <Item value="var" priority="6" />
       <Item value="ModelStateValidation" priority="0" />
       <Item value="container" priority="0" />
       <Item value="typeof" priority="1" />
@@ -102,6 +112,46 @@
       <Item value="const" priority="1" />
       <Item value="directoryPath" priority="0" />
       <Item value="nHibernateValidatiorFileName" priority="0" />
+      <Item value="Cliente" priority="9" />
+      <Item value="return" priority="4" />
+      <Item value="name" priority="0" />
+      <Item value="ClienteDTO" priority="1" />
+      <Item value="NoControl" priority="0" />
+      <Item value="item" priority="1" />
+      <Item value="Projections" priority="1" />
+      <Item value="Nombre" priority="0" />
+      <Item value="clienteService" priority="0" />
+      <Item value="Dictionary&lt;string,object&gt;" priority="0" />
+      <Item value="noControl" priority="0" />
+      <Item value="MessageBox" priority="4" />
+      <Item value="foreach" priority="2" />
+      <Item value="attribute" priority="0" />
+      <Item value="propertyInfo" priority="0" />
+      <Item value="PropertyInfo" priority="0" />
+      <Item value="property" priority="0" />
+      <Item value="attributes" priority="4" />
+      <Item value="MemberTypes" priority="0" />
+      <Item value="BindingFlags" priority="1" />
+      <Item value="MemberFilter" priority="0" />
+      <Item value="ToString" priority="0" />
+      <Item value="in" priority="0" />
+      <Item value="txtNoControl" priority="0" />
+      <Item value="txtApellidoPaterno" priority="0" />
+      <Item value="txtApellidoMaterno" priority="0" />
+      <Item value="txtTelefono" priority="0" />
+      <Item value="txtDireccion" priority="0" />
+      <Item value="txtRFC" priority="0" />
+      <Item value="value" priority="2" />
+      <Item value="_Id" priority="1" />
+      <Item value="ClienteForm" priority="2" />
+      <Item value="IClienteMapper" priority="0" />
+      <Item value="clienteMapper" priority="2" />
+      <Item value="Repository" priority="0" />
+      <Item value="clienteForm" priority="1" />
+      <Item value="Id" priority="1" />
+      <Item value="lblHiddenId" priority="3" />
+      <Item value="model" priority="5" />
+      <Item value="message" priority="5" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SistemaInventarios.ApplicationServices.Impl.ClienteService">
       <Item value="clienteRepository" priority="0" />
@@ -115,9 +165,20 @@
     <ItemStatistics item="Qualified:SistemaInventarios.Model.Cliente">
       <Item value="ValidationResults" priority="2" />
       <Item value="IsValid" priority="0" />
+      <Item value="Rfc" priority="2" />
+      <Item value="Nombre" priority="1" />
+      <Item value="GetType" priority="2" />
+      <Item value="GetSignatureProperties" priority="1" />
+      <Item value="NoControl" priority="1" />
+      <Item value="ApellidoPaterno" priority="1" />
+      <Item value="ApellidoMaterno" priority="1" />
+      <Item value="Telefono" priority="1" />
+      <Item value="Direccion" priority="1" />
+      <Item value="Id" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SistemaInventarios.ApplicationServices.IClienteService">
       <Item value="SaveCliente" priority="0" />
+      <Item value="GetClienteById" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@SistemaInventarios.UI.ValidationHelper.ModelStateValidation">
       <Item value="ValidationResults" priority="0" />
@@ -130,6 +191,87 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:SharpArch.Core.CommonValidator.IValidationResult">
       <Item value="PropertyName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SharpArch.Core.PersistenceSupport.IRepository`1">
+      <Item value="FindAll" priority="0" />
+      <Item value="FindOne" priority="0" />
+      <Item value="DbContext" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SistemaInventarios.ApplicationServices.Impl.ClienteService+ClienteDTO">
+      <Item value="Rfc" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.Criterion.ProjectionList">
+      <Item value="Add" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NHibernate.Criterion.Projections">
+      <Item value="Property" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="Attributes" priority="3" />
+      <Item value="GetCustomAttributes" priority="0" />
+      <Item value="ToString" priority="1" />
+      <Item value="FindMembers" priority="0" />
+      <Item value="GetFields" priority="0" />
+      <Item value="GetProperties" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.TypeAttributes">
+      <Item value="GetType" priority="1" />
+      <Item value="GetHashCode" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="GetType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.PropertyInfo">
+      <Item value="GetValue" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="PropertyType" priority="0" />
+      <Item value="GetIndexParameters" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reflection.MemberTypes">
+      <Item value="Property" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reflection.BindingFlags">
+      <Item value="Public" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reflection.MemberFilter">
+      <Item value="Combine" priority="1" />
+      <Item value="CreateDelegate" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.FieldInfo">
+      <Item value="FieldType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SistemaInventarios.UI.StaticModelFields.ClienteForm">
+      <Item value="Id" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SistemaInventarios.UI.Mappers.IClienteMapper">
+      <Item value="Map" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Label">
+      <Item value="Text" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SistemaInventarios.UI.Models.ClienteForm">
+      <Item value="Id" priority="0" />
+      <Item value="ApellidoPaterno" priority="0" />
+      <Item value="ApellidoMaterno" priority="0" />
+      <Item value="NoControl" priority="0" />
+      <Item value="Rfc" priority="0" />
+      <Item value="Direccion" priority="0" />
+      <Item value="Telefono" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SharpArch.Core.PersistenceSupport.IDbContext">
+      <Item value="CommitChanges" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

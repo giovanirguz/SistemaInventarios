@@ -18,7 +18,7 @@ namespace SistemaInventarios.ApplicationSettings.WindsorSettings
             AddGenericRepositoriesTo(container);
             AddCustomRepositoriesTo(container);
             AddApplicationServicesTo(container);
-            //AddCommonTo(container);
+            AddMappersTo(container);
 
             container.AddComponent("validator",
                                    typeof(IValidator), typeof(Validator));
@@ -37,14 +37,14 @@ namespace SistemaInventarios.ApplicationSettings.WindsorSettings
                     .WithService.FirstInterface());
         }
 
-        //static void AddCommonTo(IWindsorContainer container)
-        //{
-        //    container.Register(
-        //        AllTypes.Pick()
-        //            .FromAssemblyNamed("SistemaInventarios.UI")
-        //            .If(x => x.Namespace.EndsWith("ValidationHelper"))
-        //            .WithService.Base());
-        //}
+        private static void AddMappersTo(IWindsorContainer container)
+        {
+            container.Register(
+                AllTypes.Pick()
+                    .FromAssemblyNamed("SistemaInventarios.UI")
+                    .If(x => x.Name.EndsWith("Mapper"))
+                    .WithService.FirstNonGenericCoreInterface("SistemaInventarios.UI.Mappers"));
+        }
 
         private static void AddCustomRepositoriesTo(IWindsorContainer container)
         {

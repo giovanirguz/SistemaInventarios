@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using SharpArch.Data.NHibernate;
 using SistemaInventarios.ApplicationServices;
 using SistemaInventarios.ApplicationServices.Impl;
 using SistemaInventarios.Model;
+using SistemaInventarios.UI.Mappers;
+using SistemaInventarios.UI.Mappers.Impl;
+using SistemaInventarios.UI.Models;
 using SistemaInventarios.UI.ValidationHelper;
 
 namespace SistemaInventarios.UI
@@ -17,11 +14,13 @@ namespace SistemaInventarios.UI
     public partial class FrmClienteForm : Form
     {
         readonly IClienteService clienteService;
+        readonly IClienteMapper clienteMapper;
 
         public FrmClienteForm()
         {
             InitializeComponent();
             clienteService = new ClienteService(new Repository<Cliente>());
+            clienteMapper = new ClienteMapper(new Repository<Cliente>());
         }
 
         private void FrmClienteForm_Load(object sender, EventArgs e)
@@ -31,8 +30,9 @@ namespace SistemaInventarios.UI
 
         private void tsbGuardar_Click(object sender, EventArgs e)
         {
-            var cliente = new Cliente
+            var clienteForm = new ClienteForm
                               {
+                                  Id = int.Parse(lblHiddenId.Text),
                                   NoControl = int.Parse(txtNoControl.Text),
                                   Nombre = txtNombre.Text,
                                   ApellidoPaterno = txtApellidoPaterno.Text,
@@ -41,6 +41,8 @@ namespace SistemaInventarios.UI
                                   Rfc = txtRFC.Text,
                                   Telefono = txtTelefono.Text
                               };
+
+            var cliente = clienteMapper.Map(clienteForm);
 
             if (!cliente.IsValid())
             {
@@ -53,7 +55,39 @@ namespace SistemaInventarios.UI
                 MessageBox.Show(cliente.Nombre + " fue grabado exitosamente");
                 LimpiarControles();
                 txtNombre.Focus();
+                lblHiddenId.Text = "0";
             }
+        }
+
+        private void txtNombreBusqueda_TextChanged(object sender, EventArgs e)
+        {
+            lsvClientes.Items.Clear();
+
+            if (txtNombreBusqueda.Text == "") { return; }
+
+            var clientes = clienteService.GetClientesByName(txtNombreBusqueda.Text);
+
+            foreach (var cliente in clientes)
+            {
+                lsvClientes.Items.Add(new ListViewItem(new[] { cliente.NoControl.ToString(), cliente.Nombre, cliente.Rfc }));
+            }
+        }
+
+        private void lsvClientes_Click(object sender, EventArgs e)
+        {
+            gpbAlta.Visible = true;
+            gpbBusqueda.Visible = false;
+            tsbGuardar.Enabled = true;
+            var clienteForm = clienteMapper.Map(clienteService.GetClienteByNoControl(int.Parse(lsvClientes.Items[lsvClientes.FocusedItem.Index].SubItems[0].Text)));
+
+            txtNoControl.Text = clienteForm.NoControl.ToString();
+            txtNombre.Text = clienteForm.Nombre;
+            txtApellidoPaterno.Text = clienteForm.ApellidoPaterno;
+            txtApellidoMaterno.Text = clienteForm.ApellidoMaterno;
+            txtRFC.Text = clienteForm.Rfc;
+            txtDireccion.Text = clienteForm.Direccion;
+            txtTelefono.Text = clienteForm.Telefono;
+            lblHiddenId.Text = clienteForm.Id.ToString();
         }
 
         #region Form Event Handlers
@@ -80,6 +114,7 @@ namespace SistemaInventarios.UI
             gpbBusqueda.Visible = false;
             txtNombre.Focus();
             tsbGuardar.Enabled = true;
+            lblHiddenId.Text = "0";
             GenerateNoControl();
         }
 

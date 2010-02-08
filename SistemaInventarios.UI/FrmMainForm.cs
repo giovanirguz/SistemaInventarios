@@ -74,7 +74,10 @@ namespace SistemaInventarios.UI
                     Application.Exit();
             }
             else
+            {
                 configSetup.InitializeNHibernate();
+                AutoMapperConfiguration.Configure();
+            }
         }
     }
 }

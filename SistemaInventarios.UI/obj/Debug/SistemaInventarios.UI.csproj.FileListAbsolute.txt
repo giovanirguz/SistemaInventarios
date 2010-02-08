@@ -47,3 +47,4 @@ C:\Net\Projects\SistemaInventarios\SistemaInventarios.UI\bin\Debug\NHibernate.xm
 C:\Net\Projects\SistemaInventarios\SistemaInventarios.UI\bin\Debug\SistemaInventarios.UI.exe.config
 C:\Net\Projects\SistemaInventarios\SistemaInventarios.UI\bin\Debug\Newtonsoft.Json.dll
 C:\Net\Projects\SistemaInventarios\SistemaInventarios.UI\bin\Debug\Newtonsoft.Json.xml
+C:\Net\Projects\SistemaInventarios\SistemaInventarios.UI\bin\Debug\AutoMapper.dll

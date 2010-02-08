@@ -18,3 +18,7 @@ C:\Net\Projects\SistemaInventarios\SistemaInventarios.ApplicationServices\bin\De
 C:\Net\Projects\SistemaInventarios\SistemaInventarios.ApplicationServices\bin\Debug\NHibernate.xml
 C:\Net\Projects\SistemaInventarios\SistemaInventarios.ApplicationServices\bin\Debug\Newtonsoft.Json.dll
 C:\Net\Projects\SistemaInventarios\SistemaInventarios.ApplicationServices\bin\Debug\Newtonsoft.Json.xml
+C:\Net\Projects\SistemaInventarios\SistemaInventarios.ApplicationServices\bin\Debug\SharpArch.Data.dll
+C:\Net\Projects\SistemaInventarios\SistemaInventarios.ApplicationServices\bin\Debug\FluentNHibernate.dll
+C:\Net\Projects\SistemaInventarios\SistemaInventarios.ApplicationServices\bin\Debug\FluentNHibernate.xml
+C:\Net\Projects\SistemaInventarios\SistemaInventarios.ApplicationServices\bin\Debug\SharpArch.Data.pdb

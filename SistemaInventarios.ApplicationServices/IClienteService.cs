@@ -1,4 +1,5 @@
-﻿using SistemaInventarios.Model;
+﻿using System.Collections;
+using SistemaInventarios.Model;
 
 namespace SistemaInventarios.ApplicationServices
 {
@@ -6,5 +7,7 @@ namespace SistemaInventarios.ApplicationServices
     {
         Cliente GetClienteById(int id);
         void SaveCliente(Cliente cliente);
+        Cliente[] GetClientesByName(string name);
+        Cliente GetClienteByNoControl(int noControl);
     }
 }

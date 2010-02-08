@@ -35,6 +35,10 @@
             this.tsbGuardar = new System.Windows.Forms.ToolStripButton();
             this.tsbSalir = new System.Windows.Forms.ToolStripButton();
             this.gpbAlta = new System.Windows.Forms.GroupBox();
+            this.txtApellidoMaterno = new System.Windows.Forms.TextBox();
+            this.txtApellidoPaterno = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.txtNoControl = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -52,12 +56,7 @@
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtApellidoPaterno = new System.Windows.Forms.TextBox();
-            this.txtApellidoMaterno = new System.Windows.Forms.TextBox();
+            this.lblHiddenId = new System.Windows.Forms.Label();
             this.tlsBarraMenu.SuspendLayout();
             this.gpbAlta.SuspendLayout();
             this.gpbBusqueda.SuspendLayout();
@@ -132,6 +131,7 @@
             this.gpbAlta.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.gpbAlta.Controls.Add(this.lblHiddenId);
             this.gpbAlta.Controls.Add(this.txtApellidoMaterno);
             this.gpbAlta.Controls.Add(this.txtApellidoPaterno);
             this.gpbAlta.Controls.Add(this.label8);
@@ -152,6 +152,38 @@
             this.gpbAlta.TabIndex = 28;
             this.gpbAlta.TabStop = false;
             this.gpbAlta.Text = "Alta Cliente";
+            // 
+            // txtApellidoMaterno
+            // 
+            this.txtApellidoMaterno.Location = new System.Drawing.Point(134, 112);
+            this.txtApellidoMaterno.Name = "txtApellidoMaterno";
+            this.txtApellidoMaterno.Size = new System.Drawing.Size(147, 20);
+            this.txtApellidoMaterno.TabIndex = 28;
+            // 
+            // txtApellidoPaterno
+            // 
+            this.txtApellidoPaterno.Location = new System.Drawing.Point(134, 86);
+            this.txtApellidoPaterno.Name = "txtApellidoPaterno";
+            this.txtApellidoPaterno.Size = new System.Drawing.Size(147, 20);
+            this.txtApellidoPaterno.TabIndex = 27;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(44, 115);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(86, 13);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "Apellido Materno";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(44, 89);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(84, 13);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "Apellido Paterno";
             // 
             // txtNoControl
             // 
@@ -176,7 +208,7 @@
             // 
             this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.Location = new System.Drawing.Point(134, 87);
+            this.txtNombre.Location = new System.Drawing.Point(134, 60);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(147, 20);
             this.txtNombre.TabIndex = 2;
@@ -185,7 +217,7 @@
             // 
             this.txtRFC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRFC.Location = new System.Drawing.Point(134, 61);
+            this.txtRFC.Location = new System.Drawing.Point(134, 138);
             this.txtRFC.Name = "txtRFC";
             this.txtRFC.Size = new System.Drawing.Size(147, 20);
             this.txtRFC.TabIndex = 3;
@@ -230,7 +262,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 64);
+            this.label2.Location = new System.Drawing.Point(44, 141);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 21;
@@ -239,7 +271,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 90);
+            this.label1.Location = new System.Drawing.Point(44, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 20;
@@ -278,6 +310,7 @@
             this.txtNombreBusqueda.Name = "txtNombreBusqueda";
             this.txtNombreBusqueda.Size = new System.Drawing.Size(259, 20);
             this.txtNombreBusqueda.TabIndex = 12;
+            this.txtNombreBusqueda.TextChanged += new System.EventHandler(this.txtNombreBusqueda_TextChanged);
             // 
             // lsvClientes
             // 
@@ -288,9 +321,7 @@
             this.lsvClientes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5});
+            this.columnHeader3});
             this.lsvClientes.FullRowSelect = true;
             this.lsvClientes.GridLines = true;
             this.lsvClientes.Location = new System.Drawing.Point(6, 61);
@@ -300,71 +331,40 @@
             this.lsvClientes.TabIndex = 15;
             this.lsvClientes.UseCompatibleStateImageBehavior = false;
             this.lsvClientes.View = System.Windows.Forms.View.Details;
+            this.lsvClientes.Click += new System.EventHandler(this.lsvClientes_Click);
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "No. de Control";
-            this.columnHeader1.Width = 89;
+            this.columnHeader1.Width = 116;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Nombre";
-            this.columnHeader2.Width = 89;
+            this.columnHeader2.Width = 259;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "R.F.C.";
-            this.columnHeader3.Width = 107;
+            this.columnHeader3.Width = 115;
             // 
-            // columnHeader4
+            // lblHiddenId
             // 
-            this.columnHeader4.Text = "Direccion";
-            this.columnHeader4.Width = 108;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Telefono";
-            this.columnHeader5.Width = 168;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(44, 116);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 13);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "Apellido Paterno";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(44, 142);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 13);
-            this.label8.TabIndex = 26;
-            this.label8.Text = "Apellido Materno";
-            // 
-            // txtApellidoPaterno
-            // 
-            this.txtApellidoPaterno.Location = new System.Drawing.Point(134, 113);
-            this.txtApellidoPaterno.Name = "txtApellidoPaterno";
-            this.txtApellidoPaterno.Size = new System.Drawing.Size(147, 20);
-            this.txtApellidoPaterno.TabIndex = 27;
-            // 
-            // txtApellidoMaterno
-            // 
-            this.txtApellidoMaterno.Location = new System.Drawing.Point(134, 139);
-            this.txtApellidoMaterno.Name = "txtApellidoMaterno";
-            this.txtApellidoMaterno.Size = new System.Drawing.Size(147, 20);
-            this.txtApellidoMaterno.TabIndex = 28;
+            this.lblHiddenId.AutoSize = true;
+            this.lblHiddenId.Location = new System.Drawing.Point(131, 18);
+            this.lblHiddenId.Name = "lblHiddenId";
+            this.lblHiddenId.Size = new System.Drawing.Size(13, 13);
+            this.lblHiddenId.TabIndex = 29;
+            this.lblHiddenId.Text = "0";
+            this.lblHiddenId.Visible = false;
             // 
             // FrmClienteForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 420);
-            this.Controls.Add(this.gpbAlta);
             this.Controls.Add(this.tlsBarraMenu);
+            this.Controls.Add(this.gpbAlta);
             this.Controls.Add(this.gpbBusqueda);
             this.MinimumSize = new System.Drawing.Size(577, 458);
             this.Name = "FrmClienteForm";
@@ -407,11 +407,10 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.TextBox txtApellidoMaterno;
         private System.Windows.Forms.TextBox txtApellidoPaterno;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblHiddenId;
     }
 }
