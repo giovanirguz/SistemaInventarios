@@ -1,0 +1,4 @@
+Hay que copiar los archivos NHibernate.config y NHvalidator.config
+a un folder llamado C:\NHibernateSettings para que la aplicacion 
+funcione con nhibernate y la validacion despliegue los mansajes en
+espanol.
